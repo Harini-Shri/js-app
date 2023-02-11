@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-group{ margin: auto;
+width:50%;
+border: 0.5px solid rgb(28, 30, 28);
+  padding: 11px;
+  
+ }
+input{ margin: auto;
+    width:90%;
+    border: 2px solid rgb(28, 30, 28);
+    padding: 11px;
+    text-align: center;}
+button{ 
+    margin: 0;
+  position: relative;
+  top: 20%;
+  left: 30%;
+    width:100px;
+    background: dodgerblue; 
+    color: #fff; 
+    padding: 10px; 
+    border: solid 1px dodgerblue;
+    cursor: pointer;
+    align-items: center;
+    ;
+}
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: #f7f5ff;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}

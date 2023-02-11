@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>BookList App</title>
+</head>
+<body style="background-color: rgb(202, 178, 180);">
+ 
+    <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>List</h1>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN#</label>
+          <input type="text" id="isbn" class="form-control">
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+        <br>
+        <h4>Search by authors:</h4>
+        <input type="search" id="gsearch"  class="btn btn-primary btn-block" onsearch="myFunction()">
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        
+        </thead>
+        
+        <tbody id="book-list"></tbody>
+        <tbody id="list2"></tbody>
+      </table>
+      
+  </div>
+  <script src="authenticatoin.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
