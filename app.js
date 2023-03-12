@@ -73,7 +73,6 @@ class Store{
       }
       static searchBook(author){
         let auth = document.getElementById('author').value;
-        let books = JSON.parse(localStorage.getItem('books')) || [];
         let exist = JSON.parse(localStorage.getItem('books')).some(data => data.author.toLowerCase() == auth);
         if(!exist){
             alert("not found");
@@ -133,17 +132,12 @@ document.querySelector('#book-form').addEventListener('submit',(e)=>{
     UI.clearFields();
   }    
     });
-    /*
-    //to search for book
-    document.querySelector('#book-form').addEventListener('search',(e)=>{
-        const author=document.querySelector('#author').value;
+  
 
-    UI.searchBook(author)
-    });
-    */
+
    //to Search for a book
     function myFunction() {
-        var x = document.getElementById("gsearch");
+        let x = document.getElementById("gsearch");
         document.getElementById("list2").innerHTML = "You are searching for: " + x.value;
         let books = JSON.parse(localStorage.getItem('books')) || [];
         let exist = JSON.parse(localStorage.getItem('books')).some(data => data.author.toLowerCase() == x.value.toLowerCase());
